@@ -30,7 +30,7 @@ function Cart() {
   const cart = fakeCart;
 
   return (
-    <div>
+    <div className="px-4 py-3">
       <LinkButton
         to="/menu"
         className="text-sm text-blue-500 hover:font-semibold hover:text-blue-600"
