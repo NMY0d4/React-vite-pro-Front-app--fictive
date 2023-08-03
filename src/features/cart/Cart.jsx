@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import LinkButton from '../../ui/LinkButton';
 import Button from '../../ui/Button';
 import { useSelector } from 'react-redux';
+import CartOverview from './CartOverview';
 
 const fakeCart = [
   {
@@ -29,6 +30,7 @@ const fakeCart = [
 
 function Cart() {
   const { username } = useSelector((store) => store.user);
+  const { cart } = useSelector((state) => state.cart);
 
   const cart = fakeCart;
 

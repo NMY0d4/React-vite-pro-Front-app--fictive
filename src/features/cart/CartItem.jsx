@@ -1,3 +1,6 @@
+/* eslint-disable react/prop-types */
+import { formatCurrency } from '../../utils/helpers';
+
 function CartItem({ item }) {
   const { pizzaId, name, quantity, totalPrice } = item;
 
