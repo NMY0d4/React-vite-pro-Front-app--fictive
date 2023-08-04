@@ -1,11 +1,5 @@
 import { useState } from 'react';
-import {
-  Form,
-  json,
-  redirect,
-  useActionData,
-  useNavigation,
-} from 'react-router-dom';
+import { Form, redirect, useActionData, useNavigation } from 'react-router-dom';
 import { createOrder } from '../../services/apiRestaurant';
 import Button from '../../ui/Button';
 import { useDispatch, useSelector } from 'react-redux';
@@ -32,7 +26,6 @@ function CreateOrder() {
   } = useSelector((store) => store.user);
 
   const isLoadingAddress = addressStatus === 'loading';
-  console.log(address);
 
   const navigation = useNavigation();
   const isSubmitting = navigation.state === 'submitting';
